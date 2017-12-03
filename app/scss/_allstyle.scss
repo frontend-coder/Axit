@@ -1,0 +1,408 @@
+@import '_var.scss';
+
+/* оформление содержимого над самой нартикой ниже top line */
+.block {
+	padding: 100px 0 130px 0;
+}
+
+.block_st {
+	background-color: #f5f5f5;
+}
+
+.sub_list_sec h2 {
+color: #212121;
+ @include font-size(20px);
+ line-height: 2.15;
+ margin-bottom: 60px;
+ position: relative;
+}
+.sub_list_sec h2:before {
+	position: absolute;
+	content: "";
+	width: 64px;
+	height: 2px;
+background-color: $orange_fonts;
+left: 0;
+bottom: -30px;
+}
+.sub_list_descr {
+ @include font-size(14px);
+ color: #86878b;
+  line-height: 1.42;
+}
+
+.sub_list_block {
+	padding: 0;
+	margin-top: 40px;
+}
+.sub_list_icon {
+	float: left;
+	width: 37px;
+	height: 37px;
+	text-align: center;
+line-height: 37px;
+	border: 2px solid $orange_fonts;
+	border-radius: 50%;
+
+}
+.sub_list_icon .fa {
+color:  $orange_fonts;
+}
+.sub_list_description {
+float: left;
+margin-left: 40px;
+width: 440px;
+}
+
+.block_title {
+	text-align: center;
+margin-bottom: 63px;
+position: relative;
+}
+.block_title h2 {
+font-family: "RalewayRegular", sans-serif;
+@include font-size(36px);
+color: #212121;
+text-transform: uppercase;
+}
+.block_title:before {
+position: absolute;
+content:'';
+width: 62px;
+height: 2px;
+left: 50%;
+margin-left: -31px;
+bottom: -19px;
+background-color: $orange_fonts;
+display: inline-block;
+text-align: center;
+
+}
+.block_deskr
+{
+	  @include font-size(14px);
+		text-align: center;
+	color:#86878b;
+	margin-bottom: 68px;
+
+}
+
+.awesome_box {
+@include padzero;
+}
+.awesome_item {
+	width: 33.3333%;
+	float: left;
+	padding: 0 10px;
+}
+.awesome_item_icon {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0 auto;
+	border: 2px solid $orange_fonts;
+	border-radius: 50%;
+	color: $orange_fonts;
+	  @include font-size(32px);
+	  margin-bottom: 27px;
+
+}
+.awesome_item_title  {
+	text-align: center;
+	font-family: "OpenSansBold";
+	 @include font-size(20px);
+	 color: #333;
+	 margin-bottom: 20px;
+
+}
+.awesome_item_text {
+	text-align: center;
+	color: #86878b;
+	 @include font-size(14px);
+}
+
+
+/* блок с ценами */
+
+.price_box {
+@include padzero;
+display: flex;
+align-items: flex-end;
+
+}
+.price_box_items {
+width: 33.333%;
+margin-right: 37px;
+
+}
+.price_popul {
+padding: 14px 0;
+  @include font-size(14px);
+  text-align: center;
+  font-weight: bold;
+  background-color: $orange_fonts;
+  text-transform: uppercase;
+
+
+}
+.price_box_items:last-child {
+margin-right: 0;
+	}
+.price_items_name {
+	font-family: "OpenSansBold";
+  @include font-size(20px);
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+  background-color: #333333;
+color: #fff;
+}
+.price_items_price {
+ background-color: #333333;
+ padding: 23px 0 0 0;
+ text-align: center;
+   @include font-size(94px);
+   color: #fff;
+
+}
+.price_items_price span {
+   @include font-size(35px);
+	}
+.price_terms {
+	font-style: italic;
+	   @include font-size(14px);
+	   margin-top: 27px;
+	   padding-bottom: 17px;
+
+}
+.price_terms_b {
+border-bottom: 5px solid $orange_fonts;
+
+}
+.price_items_termes {
+	padding: 0;
+	margin: 0;
+background-color: #fff;
+}
+.price_termes_line {
+	text-align: center;
+	color: #86878b;
+  @include font-size(14px);
+  line-height: (24px / 14px);
+  text-transform: uppercase;
+  padding: 14px 0;
+  border-bottom: 1px solid $lne-border;
+}
+.price_termes_link {
+	display: block;
+	text-align: center;
+	 padding: 14px 0;
+	 font-family: "OpenSansSemiBold", sans-serif;
+	 background-color: $orange_fonts;
+	 color: #fff;
+	 text-transform: uppercase;
+	  @include trans;
+	 }
+.price_termes_link:hover {
+color: #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* блок отзывов  */
+.adwise_block {
+	padding: 0;
+	margin: 0;
+}
+.adwise_item {
+	width: 30%;
+	margin-right: 3.333%;
+	float: left;
+}
+
+.adwise_item:last-child {
+	margin-right: 0;
+}
+.adwise_text {
+background-color: #f5f5f5;
+color: #86878b;
+ @include font-size(14px);
+ padding: 20px 10px;
+ position: relative;
+   border-radius: 5px;
+}
+.adwise_text:before{
+position: absolute;
+content: '';
+  @include triangle(18px, down, #f5f5f5);
+  left: 20px;
+  top:100%;
+
+}
+.adwise_autor_box {
+margin-top: 30px;
+
+}
+.adwise_autor_foto, .adwise_autor_foto img {
+width: 70px;
+height: 70px;
+float: left;
+border-radius: 50%;
+}
+.adwise_autor_texting {
+float: left;
+padding-left: 5px;
+display: table;
+height: 70px;
+}
+.adwise_autor_tex {
+ display: table-cell;
+ vertical-align: middle;
+  @include font-size(18px);
+color: $h3_color;
+	font-family: "OpenSansBold", sans-serif;
+
+}
+.adwise_autorproff {
+color: #86878b;
+  @include font-size(14px);
+  display: block;
+font-weight: normal;
+
+}
+/*
+небольшой блок с кнопкой
+заказа через всплывающую форму обратной связи
+
+
+ */
+
+ .buttons_fon {
+ background: #000 url('../images/header-pic.jpg') center center no-repeat;
+min-height:320px;
+background-size: cover;
+position: relative;
+text-align: center;
+}
+ .buttons_fon:before {
+	position: absolute;
+	content: '';
+background-color:rgba(#000, 0.520);
+left: 0;
+top:0;
+bottom: 0;
+right:0;
+width: 100%;
+height: 100%;
+}
+
+ .buttons_fon .block_title h2,
+ .buttons_fon .block_deskr,
+
+   {
+color: #fff;
+position: relative;
+ }
+  .buttons_fon .block_title:before {
+  	background-color: #fff;
+  }
+
+.button_inslide {
+display: inline-block;
+padding: 12px 22px;
+text-align: center;
+border: 2px solid #fff;
+color: #fff;
+position: relative;
+  @include trans;
+}
+.button_inslide:hover {
+color: $orange_fonts;
+border: 2px solid $orange_fonts;
+
+}
+/* оформление футера */
+footer {
+	background-color: #000;
+	padding: 20px 0;
+}
+
+.footer-copy {
+	text-align: center;
+	  @include font-size(12px);
+	  color: #fff;
+}
+
+/* оформление табов */
+.jq-tab-menu .jq-tab-title {
+    background: $h3_color;
+    color: #fff;
+    border: 0;
+      @include trans;
+
+  }
+.jq-tab-menu .jq-tab-title.active, .jq-tab-menu .jq-tab-title:hover {
+    background: $orange_fonts;
+    border-left: 0;
+  }
+
+.jq-tab-content {
+    display: none;
+    padding: 0 20px;
+  }
+.content_tabs_block {
+	padding: 0;
+	margin: 0;
+}
+.content_tabs_left {
+	float: left;
+	width: 70%;
+	padding: 0 70px 0 30px;
+}
+.content_tabs_right {
+	float: left;
+	width: 30%;
+}
+
+.content_tabs_left p
+{
+	 @include font-size(14px);
+	color:#86878b;
+	margin-bottom: 27px;
+}
+
+
+
+
+.content_tabs_left h2  {
+	font-family: "OpenSansBold", sans-serif;
+ @include font-size(20px);
+ color: #000;
+ margin-bottom: 60px;
+}
+
+a.content_tabs_button {
+	display: inline-block;
+	padding: 15px 25px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: $orange_fonts;
+color: #fff;
+  @include font-size(15px);
+  font-family: "OpenSansSemiBold", sans-serif;
+box-shadow: 1px 3px 3px 1px rgba(#000, 0.15);
+ @include trans;
+}
+a.content_tabs_button:hover {
+color: #000;
+}

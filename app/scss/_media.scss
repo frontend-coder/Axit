@@ -1,0 +1,165 @@
+@import '_var.scss';
+@media only screen and (max-width : 1200px) {
+.container {
+ width: 1170px;
+}
+
+}
+
+@media only screen and (max-width : 1190px) {
+.container {
+ width: 1170px;
+}
+
+
+}
+
+@media screen and (max-width: 1080px) {
+.container { width: 1060px;
+}
+
+
+}
+@media only screen and (max-width: 1024px) {
+.container {
+  width: 1004px;
+  }
+
+
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+  width: 970px;
+}
+
+
+}
+
+@media only screen and (max-width: 800px) {
+.container {
+  width: 780px;
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+.container {
+	width: 750px;
+}
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 736px) {
+.container {
+  width: 716px;
+}
+
+}
+
+@media only screen and (max-width: 667px) {
+.container {
+ width: 647px;
+}
+
+}
+
+@media only screen and (max-width: 640px) {
+.container {
+	 width: 620px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+.container {
+	 width: 580px;
+}
+
+
+}
+
+@media only screen and (max-width: 568px) {
+.container {
+	 width: 548px;
+	}
+
+
+}
+
+@media only screen and (max-width: 480px) {
+.container {
+	 width: 460px;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+.container {
+	  width: 405px;
+}
+
+
+}
+
+@media only screen and (max-width: 384px) {
+.container {
+	 width: 364px;
+	 }
+
+
+}
+
+@media only screen and (max-width: 360px) {
+.container {
+	 width: 340px;
+}
+
+
+
+}
+
+@media only screen and (max-width: 320px) {
+.container {
+ width: 310px;
+}
+
+
+
+
+
+}
