@@ -183,3 +183,120 @@ color: #86878b;
   padding: 15px;
 }
 
+.mobile_block_menu  {
+	display: none;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+background-color: #fff;height: 2px;
+}
+
+
+.hamburger {
+padding: 7px 0;
+}
+
+
+
+/*оформление 2 меню для адаптива*/
+.hidden-mnu {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+  top: 70px;
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+
+.hidden-mnu ul li {
+ display: block;
+   background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden-mnu ul li a {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+  color: #fff;
+}
+
+.hidden-mnu ul li a:hover {
+  background-color: $orange_fonts;
+  color: #fff;
+}
+
+/*начало оформления кнопки  меню для адаптива*/
+.toggle-mnu {
+  float: right;
+  color: #000;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  text-align: center;
+  line-height: 48px;
+}
+
+.toggle-mnu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.toggle-mnu span:after, .toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+.toggle-mnu span:after {
+  top: 18px;
+}
+
+.toggle-mnu span {
+  position: relative;
+  display: block;
+}
+
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all .3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.toggle-mnu.on span {
+  background-color: transparent;
+}
+
+.toggle-mnu.on span:before {
+-o-transform: rotate(45deg) translate(-1px, 0);
+-moz-transform: rotate(45deg) translate(-1px, 0);
+-webkit-transform: rotate(45deg) translate(-1px, 0);
+-ms-transform: rotate(45deg) translate(-1px, 0);
+transform: rotate(45deg) translate(-1px, 0);
+}
+
+.toggle-mnu.on span:after {
+-o-transform: rotate(-45deg) translate(6px, -7px);
+-moz-transform: rotate(-45deg) translate(6px, -7px);
+-webkit-transform: rotate(-45deg) translate(6px, -7px);
+-ms-transform: rotate(-45deg) translate(6px, -7px);
+transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.toggle-mnu.on + #menu {
+  opacity: 1;
+  visibility: visible;
+}

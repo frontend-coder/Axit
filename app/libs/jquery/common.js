@@ -2,34 +2,21 @@ $(document).ready(function() {
 	$("body").niceScroll({
 horizrailenabled:false
 });
-$('.parallax-window').parallax({
-    naturalWidth: 600,
-    naturalHeight: 400
-  });
-
 // вверхнее красиво-вращающееся меню
 // 1 и 2 строка это анимация крестика
 //3 строка - слайдер вниз меню
 $(".toggle-mnu").click(function() {
 $(this).toggleClass("on");
-$(".hidden-mnu").slideToggle();
+$(".top_line_menu").slideToggle();
 return false;
 });
-$('body, .top-menu ul li a').click(function () {
+$('body, .top_line_menu ul li a').click(function () {
 $('.hidden-mnu').hide("slow");
+$(".toggle-mnu").removeClass("on");
 });
 
-if (window.innerWidth >= 600) {
-$('.f_box-buton a').css('color', '#00ffff');
-}
-if (window.innerWidth < 600) {
-$('.f_box-buton a').css('color', '#000');
-}
-if (screen.width >= 768) {
-$('.f_box-buton a').css('background-color', '#00ffff');
-}
 // pagination on lending pages
-$('.top_line_menu ul li a, .hidden-mnu ul li a').mPageScroll2id({
+$(".top_line_menu ul li a, .hidden_mnu ul li a").mPageScroll2id({
 layout                 : "auto",
 offset                 : ".top_line_box",
 scrollEasing           : "linear",
